@@ -1,11 +1,17 @@
 <template>
   <div class="child">
-    <h1>Users component</h1>
+    <input type="text" name="" id="" v-model="massage" />
+    <h1 style="white-space: pre-line">{{ massage }}</h1>
   </div>
 </template>
 <script>
 export default {
   name: "Users",
+  data() {
+    return {
+      massage: "Users component",
+    };
+  },
 };
 </script>
 <style scoped>
@@ -13,7 +19,7 @@ export default {
   background-color: rgb(240, 133, 46);
   height: 100px;
   width: 200px;
-  padding: 30px;
+  padding: 60px;
   margin: 20px;
 }
 </style>>
